@@ -1,5 +1,5 @@
 --------------------------------- File Selector --------------------------------
-set chosenScript to "chosenScript.scpt" -- File to Be Refernce
+set chosenScript to "Sentences.scpt" -- File to Be Refernce
 set scriptPath to ("/Path-To-Folder/") -- Folder Path
 --------------------------------->>>>>><<<<<<<<---------------------------------
 set chosenScriptPath to scriptPath & chosenScript -- Full Path
