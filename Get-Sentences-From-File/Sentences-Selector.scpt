@@ -12,9 +12,17 @@ do shell script "osascript " & chosenScriptPath ------ Run the <chosenScript.scp
 -- Form: /HomeDirectory/Scripts/TTS/ScriptFiles/<chosenScript.scpt>
 -- Exemple: get the <chosenVariable> to ChosenScriptLoad
 -- Replace <chosenVariable> With the Name Of Your Choosen Variable
+-- Optional -- set sayWords to {"Say ", "\"Its \"", "\"And \"", "\"Minutes. \""}
+-------------- set theTime to item 1 of sayWords & item 2 of sayWords & theHours & item 3 of sayWords & theMinutes & item 4 of sayWords
+-------------- set correntDate to current date
+-------------- set theHours to hours of (correntDate)
+-------------- set theMinutes to minutes of (correntDate)
+
 get the inSoundBarR of ChosenScriptLoad
 ----------------------------------------------------------------------------------
 set selectedSentence to result
 return selectedSentence
 
-
+-- Optional -- To Be Used with <sayWords> and <theTime>
+----- Say Command
+----- return do shell script sayWords & "\"" & selectedSentence & "\""
