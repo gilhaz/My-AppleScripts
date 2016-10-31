@@ -1,5 +1,5 @@
---------------------------------- File Selector --------------------------------
 
+--------------------------------- File Selector --------------------------------
 set chosenScript to "Sentences.scpt" -- File to Be Refernce
 set homeDirectory to {POSIX path of home directory} of (system info) -- Get User's Home Directory
 set scriptPath to (homeDirectory & "Scripts/TTS/ScriptFiles/Sentences/") -- Folder Path
